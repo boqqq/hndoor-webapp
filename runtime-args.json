@@ -1,0 +1,14 @@
+{
+  "VUE_APP_TAG_SERVER_URL": "http://59.212.226.51:16600/portal",
+  "VUE_APP_BASE_CONTENT": "/",
+  "VUE_APP_SYS_PORT": "3071",
+  "VUE_APP_AC_HTTP_LOGIN": "http://59.212.226.45:31000/frontier/auth/toLogin",
+  "VUE_APP_BACK_RETURN": "http://59.212.226.51:16600/portal/login/auth/token2",
+  "VUE_APP_AC_HTTP_SERVER": "http://cloud.dfjx.com:8082",
+  "VUE_APP_TAG_API_URL":"http://59.212.226.51:30034",
+  "VUE_APP_AUTH_NEED": "NO",
+  "VUE_APP_LOGIN_AFTER": "http://cloud.dfjx.com:3071",
+  "VUE_APP_SERVICE_URL": "https://172.21.10.33:9443/storeSso/login.do",
+  "VUE_APP_AC_HTTP_LOGOUT":"http://59.212.226.49:9302/cas/logout",
+  "VUE_APP_USER_LIST":"管理员"
+}

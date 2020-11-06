@@ -1,0 +1,10 @@
+{
+  "VUE_APP_TAG_SERVER_URL": "http://59.212.226.45:30075",
+  "VUE_APP_BASE_CONTENT": "/",
+  "VUE_APP_SYS_PORT": "3071",
+  "VUE_APP_AC_HTTP_LOGIN": "http://59.212.226.45:31000/frontier/auth/toLogin",
+  "VUE_APP_BACK_RETURN": "http://123.207.126.81:30075/login/auth/token",
+  "VUE_APP_AC_HTTP_SERVER": "http://59.212.226.45:31103/#/home",
+  "VUE_APP_AUTH_NEED": "NO",
+  "VUE_APP_LOGIN_AFTER": "http://59.212.226.49:9302/logout"
+}
