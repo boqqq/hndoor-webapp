@@ -195,8 +195,8 @@
                 }).then(({data}) => {
                     if (data && data.code == 0) {
                         var list = []
-                        data.data.list.forEach(function (val) {
-                            if (val.ifShow == 'true' && list.length < 6) {
+                        data.data.list.forEach(function (val,i) {
+                            if (i < 6) {
                                 list.push(val)
                             }
                         })

@@ -4,10 +4,10 @@
             <div class="container">
                 <h1 class="logo">海南政务大数据公共服务平台</h1>
                 <ul class="nav fixed">
-                    <li :class="{'active': isActive == index}"  v-if="item.open||$store.state.user.roleName == '管理员'" v-for="(item,index) in menuList">
+                    <li :class="{'active': isActive == index}"  v-for="(item,index) in menuList">
                         <a @click="toggleNav(index,item,index)">{{item.title}}</a>
                         <ul v-if="item.children" class="nav-child" :class="{'child-active':childActive === true}">
-                            <li v-for="(t,i) in item.children" v-if="t.open" @click="toggleNav(index,t)">{{t.title}}</li>
+                            <li v-for="(t,i) in item.children" @click="toggleNav(index,t)">{{t.title}}</li>
                         </ul>
                     </li>
                 </ul>
@@ -94,12 +94,12 @@
                         path: '/manualList',
                         open:true
                     },
-                    {
-                        title: '标签',
-                        name: 'labelList',
-                        path: '/labelList',
-                        open:this.$store.state.user.roleName == runtimeArgs.VUE_APP_USER_LIST?teue:false
-                    },
+                    // {
+                    //     title: '标签',
+                    //     name: 'labelList',
+                    //     path: '/labelList',
+                    //     open:this.$store.state.user.roleName == runtimeArgs.VUE_APP_USER_LIST?teue:false
+                    // },
                 ]
             }
         },

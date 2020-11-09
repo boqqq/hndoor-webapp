@@ -52,6 +52,7 @@ http.interceptors.response.use(response => {
     store.commit('loadingStatusFalse')
     return response
 }, error => {
+    return
     store.commit('loadingFalse')
     store.commit('loadingStatusFalse')
 

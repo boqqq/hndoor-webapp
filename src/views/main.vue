@@ -47,7 +47,7 @@
             },
         },
         created() {
-            this.getUserInfo()
+            // this.getUserInfo()
         },
         methods: {
             // 获取当前管理员信息

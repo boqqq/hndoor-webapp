@@ -56,14 +56,15 @@
                         page: 1,
                     })
                 }).then(({data}) => {
+                    // alert(JSON.stringify(data))
                     if(data&&data.code == 0){
-                        var list = []
-                        data.data.list.forEach(function (val) {
-                           if(val.ifShow == 'true'){
-                               list.push(val)
-                           }
-                        })
-                        this.AppList = list
+                        // var list = []
+                        // data.data.list.forEach(function (val) {
+                        //    if(val.ifShow == 'true'){
+                        //        list.push(val)
+                        //    }
+                        // })
+                        this.AppList = data.data.list
                     }
                 })
             },
