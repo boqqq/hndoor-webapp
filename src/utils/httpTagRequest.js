@@ -21,7 +21,6 @@ const http = axios.create({
  * 响应拦截
  */
 http.interceptors.response.use(response => {
-    alert(222)
     // alert(JSON.stringify(response))
     // let responseURL = response.request.responseURL;
     // if(!sessionStorage.getItem(RouterConstants.permissions) && (null != responseURL) && responseURL.indexOf(RouterConstants.userUrl)!=-1){
@@ -32,7 +31,7 @@ http.interceptors.response.use(response => {
     store.commit('loadingStatusFalse')
     return response
 }, error => {
-    alert(111)
+    return
     store.commit('loadingFalse')
     store.commit('loadingStatusFalse')
 
